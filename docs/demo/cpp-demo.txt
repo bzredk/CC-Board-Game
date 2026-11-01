@@ -1,793 +1,793 @@
 Othello: B = black, W = white, * = legal move.
 
     a b c d e f g h
- 1  . . . . . . . . 
- 2  . . . . . . . . 
- 3  . . . * . . . . 
- 4  . . * W B . . . 
- 5  . . . B W * . . 
- 6  . . . . * . . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . . . . . . .
+ 2  . . . . . . . .
+ 3  . . . * . . . .
+ 4  . . * W B . . .
+ 5  . . . B W * . .
+ 6  . . . . * . . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 2  White: 2
 Black (minimax) to move.
 Black plays d3.
 
     a b c d e f g h
- 1  . . . . . . . . 
- 2  . . . . . . . . 
- 3  . . * B * . . . 
- 4  . . . B B . . . 
- 5  . . * B W . . . 
- 6  . . . . . . . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . . . . . . .
+ 2  . . . . . . . .
+ 3  . . * B * . . .
+ 4  . . . B B . . .
+ 5  . . * B W . . .
+ 6  . . . . . . . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 4  White: 1
 White (mcts) to move.
 White plays e3.
 
     a b c d e f g h
- 1  . . . . . . . . 
- 2  . . . . . * . . 
- 3  . . . B W * . . 
- 4  . . . B W * . . 
- 5  . . . B W * . . 
- 6  . . . . . * . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . . . . . . .
+ 2  . . . . . * . .
+ 3  . . . B W * . .
+ 4  . . . B W * . .
+ 5  . . . B W * . .
+ 6  . . . . . * . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 3  White: 3
 Black (minimax) to move.
 Black plays f3.
 
     a b c d e f g h
- 1  . . . . . . . . 
- 2  . . . . * . . . 
- 3  . . * B B B . . 
- 4  . . . B B . . . 
- 5  . . * B W . . . 
- 6  . . . . . . . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . . . . . . .
+ 2  . . . . * . . .
+ 3  . . * B B B . .
+ 4  . . . B B . . .
+ 5  . . * B W . . .
+ 6  . . . . . . . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 6  White: 1
 White (mcts) to move.
 White plays c3.
 
     a b c d e f g h
- 1  . . . . . . . . 
- 2  . . . . . . . . 
- 3  . * W B B B . . 
- 4  . . * W B . . . 
- 5  . . * B W * . . 
- 6  . . . . * . . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . . . . . . .
+ 2  . . . . . . . .
+ 3  . * W B B B . .
+ 4  . . * W B . . .
+ 5  . . * B W * . .
+ 6  . . . . * . . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 5  White: 3
 Black (minimax) to move.
 Black plays c5.
 
     a b c d e f g h
- 1  . . . . . . . . 
- 2  . . . . * . . . 
- 3  . . W B B B * . 
- 4  . . . B B . . . 
- 5  . * B B W . . . 
- 6  . . . . . . . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . . . . . . .
+ 2  . . . . * . . .
+ 3  . . W B B B * .
+ 4  . . . B B . . .
+ 5  . * B B W . . .
+ 6  . . . . . . . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 7  White: 2
 White (mcts) to move.
 White plays g3.
 
     a b c d e f g h
- 1  . . . . . . . . 
- 2  . * * * * * * . 
- 3  . . W W W W W . 
- 4  . . . B B . . . 
- 5  . . B B W * . . 
- 6  . . . . * * . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . . . . . . .
+ 2  . * * * * * * .
+ 3  . . W W W W W .
+ 4  . . . B B . . .
+ 5  . . B B W * . .
+ 6  . . . . * * . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 4  White: 6
 Black (minimax) to move.
 Black plays c2.
 
     a b c d e f g h
- 1  . . * . . . . . 
- 2  . . B . . . . . 
- 3  . . W B W W W . 
- 4  . . . B B . . . 
- 5  . * B B W . . . 
- 6  . * * . . . . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . * . . . . .
+ 2  . . B . . . . .
+ 3  . . W B W W W .
+ 4  . . . B B . . .
+ 5  . * B B W . . .
+ 6  . * * . . . . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 6  White: 5
 White (mcts) to move.
 White plays c1.
 
     a b c d e f g h
- 1  . * W . . . . . 
- 2  . * W . * * * . 
- 3  . * W B W W W * 
- 4  . . . B B . . . 
- 5  . . B B W * . . 
- 6  . . . . * * . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . * W . . . . .
+ 2  . * W . * * * .
+ 3  . * W B W W W *
+ 4  . . . B B . . .
+ 5  . . B B W * . .
+ 6  . . . . * * . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 5  White: 7
 Black (minimax) to move.
 Black plays h3.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . . W . * . . . 
- 3  . . W B B B B B 
- 4  . . . B B . . . 
- 5  . * B B W * . . 
- 6  . . . . . . . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . . W . * . . .
+ 3  . . W B B B B B
+ 4  . . . B B . . .
+ 5  . * B B W * . .
+ 6  . . . . . . . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 9  White: 4
 White (mcts) to move.
 White plays f5.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . * W * . . . . 
- 3  . * W W B B B B 
- 4  . . . B W * . . 
- 5  . . B B W W * . 
- 6  . . . . * * . . 
- 7  . . . . . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . * W * . . . .
+ 3  . * W W B B B B
+ 4  . . . B W * . .
+ 5  . . B B W W * .
+ 6  . . . . * * . .
+ 7  . . . . . . . .
+ 8  . . . . . . . .
 Black: 7  White: 7
 Black (minimax) to move.
 Black plays e6.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . . W . . . . . 
- 3  . . W W B B B B 
- 4  . . . B B . . . 
- 5  . * B B B W . . 
- 6  . . . * B * . . 
- 7  . . . * . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . . W . . . . .
+ 3  . . W W B B B B
+ 4  . . . B B . . .
+ 5  . * B B B W . .
+ 6  . . . * B * . .
+ 7  . . . * . . . .
+ 8  . . . . . . . .
 Black: 10  White: 5
 White (mcts) to move.
 White plays d7.
 
     a b c d e f g h
- 1  . * W . . . . . 
- 2  . * W * . . . . 
- 3  . * W W B B B B 
- 4  . . . B B . . . 
- 5  . . B B B W * . 
- 6  . . . . W . * . 
- 7  . . . W * * . . 
- 8  . . . . . . . . 
+ 1  . * W . . . . .
+ 2  . * W * . . . .
+ 3  . * W W B B B B
+ 4  . . . B B . . .
+ 5  . . B B B W * .
+ 6  . . . . W . * .
+ 7  . . . W * * . .
+ 8  . . . . . . . .
 Black: 9  White: 7
 Black (minimax) to move.
 Black plays g5.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . . W . * . . . 
- 3  . . W W B B B B 
- 4  . . * B B . * . 
- 5  . . B B B B B . 
- 6  . . . * W * * . 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . . W . * . . .
+ 3  . . W W B B B B
+ 4  . . * B B . * .
+ 5  . . B B B B B .
+ 6  . . . * W * * .
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 11  White: 6
 White (mcts) to move.
 White plays g6.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . * W * . . . . 
- 3  . * W W B B B B 
- 4  . . . B W * . . 
- 5  . . B B B W B . 
- 6  . . . . W . W . 
- 7  . . . W * * * . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . * W * . . . .
+ 3  . * W W B B B B
+ 4  . . . B W * . .
+ 5  . . B B B W B .
+ 6  . . . . W . W .
+ 7  . . . W * * * .
+ 8  . . . . . . . .
 Black: 9  White: 9
 Black (minimax) to move.
 Black plays f4.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . . W . * * . . 
- 3  . . W W B B B B 
- 4  . . * B B B * . 
- 5  . * B B B W B * 
- 6  . . . * W * W . 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . . W . * * . .
+ 3  . . W W B B B B
+ 4  . . * B B B * .
+ 5  . * B B B W B *
+ 6  . . . * W * W .
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 11  White: 8
 White (mcts) to move.
 White plays h5.
 
     a b c d e f g h
- 1  . * W . . . . . 
- 2  . * W * . . . . 
- 3  . * W W B B B B 
- 4  . . . B B B . . 
- 5  . . B B B W W W 
- 6  . . . . W * W * 
- 7  . . . W * * . * 
- 8  . . . . . . . . 
+ 1  . * W . . . . .
+ 2  . * W * . . . .
+ 3  . * W W B B B B
+ 4  . . . B B B . .
+ 5  . . B B B W W W
+ 6  . . . . W * W *
+ 7  . . . W * * . *
+ 8  . . . . . . . .
 Black: 10  White: 10
 Black (minimax) to move.
 Black plays h6.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . . W . * * . . 
- 3  . . W W B B B B 
- 4  . . * B B B * . 
- 5  . * B B B W B W 
- 6  . . . * W * W B 
- 7  . . . W . . . * 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . . W . * * . .
+ 3  . . W W B B B B
+ 4  . . * B B B * .
+ 5  . * B B B W B W
+ 6  . . . * W * W B
+ 7  . . . W . . . *
+ 8  . . . . . . . .
 Black: 12  White: 9
 White (mcts) to move.
 White plays e2.
 
     a b c d e f g h
- 1  . . W * . . . . 
- 2  . * W * W * . . 
- 3  . * W W W B B B 
- 4  . . . B W B . * 
- 5  . . B B W W B W 
- 6  . . . * W * W B 
- 7  . . . W . * * . 
- 8  . . . . . . . . 
+ 1  . . W * . . . .
+ 2  . * W * W * . .
+ 3  . * W W W B B B
+ 4  . . . B W B . *
+ 5  . . B B W W B W
+ 6  . . . * W * W B
+ 7  . . . W . * * .
+ 8  . . . . . . . .
 Black: 9  White: 13
 Black (minimax) to move.
 Black plays h4.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . . W . W * * * 
- 3  . . W W W B B B 
- 4  . . * B W B * B 
- 5  . * B B W W B B 
- 6  . * * * W . W B 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . . W . W * * *
+ 3  . . W W W B B B
+ 4  . . * B W B * B
+ 5  . * B B W W B B
+ 6  . * * * W . W B
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 11  White: 12
 White (mcts) to move.
 White plays b6.
 
     a b c d e f g h
- 1  . . W * . . . . 
- 2  . . W * W . . . 
- 3  . * W W W B B B 
- 4  . . * W W B . B 
- 5  . * W B W W B B 
- 6  . W . * W * W B 
- 7  . . . W . * * . 
- 8  . . . . . . . . 
+ 1  . . W * . . . .
+ 2  . . W * W . . .
+ 3  . * W W W B B B
+ 4  . . * W W B . B
+ 5  . * W B W W B B
+ 6  . W . * W * W B
+ 7  . . . W . * * .
+ 8  . . . . . . . .
 Black: 9  White: 15
 Black (minimax) to move.
 Black plays c4.
 
     a b c d e f g h
- 1  . . W . . . . . 
- 2  . . W . W * . * 
- 3  . * W W W B B B 
- 4  . . B B B B * B 
- 5  . * W B W W B B 
- 6  . W . * W . W B 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . .
+ 2  . . W . W * . *
+ 3  . * W W W B B B
+ 4  . . B B B B * B
+ 5  . * W B W W B B
+ 6  . W . * W . W B
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 12  White: 13
 White (mcts) to move.
 White plays h2.
 
     a b c d e f g h
- 1  . * W * * * . * 
- 2  . * W * W * . W 
- 3  . * W W W B W B 
- 4  . . B B B W * B 
- 5  . * W B W W B B 
- 6  . W * . W * W B 
- 7  * . . W * * * * 
- 8  . . . . . . . . 
+ 1  . * W * * * . *
+ 2  . * W * W * . W
+ 3  . * W W W B W B
+ 4  . . B B B W * B
+ 5  . * W B W W B B
+ 6  . W * . W * W B
+ 7  * . . W * * * *
+ 8  . . . . . . . .
 Black: 10  White: 16
 Black (minimax) to move.
 Black plays h1.
 
     a b c d e f g h
- 1  . . W . . . . B 
- 2  . . W . W * . B 
- 3  . * W W W B W B 
- 4  . * B B B W * B 
- 5  . * W B W W B B 
- 6  . W . * W . W B 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W . . . . B
+ 2  . . W . W * . B
+ 3  . * W W W B W B
+ 4  . * B B B W * B
+ 5  . * W B W W B B
+ 6  . W . * W . W B
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 12  White: 15
 White (mcts) to move.
 White plays b5.
 
     a b c d e f g h
- 1  . * W * * . . B 
- 2  . * W * W * . B 
- 3  . * W W W B W B 
- 4  . * W B B W * B 
- 5  * W W B W W B B 
- 6  . W . * W * W B 
- 7  * . . W * * * * 
- 8  . . . . . . . . 
+ 1  . * W * * . . B
+ 2  . * W * W * . B
+ 3  . * W W W B W B
+ 4  . * W B B W * B
+ 5  * W W B W W B B
+ 6  . W . * W * W B
+ 7  * . . W * * * *
+ 8  . . . . . . . .
 Black: 11  White: 17
 Black (minimax) to move.
 Black plays d2.
 
     a b c d e f g h
- 1  . . W . * . . B 
- 2  . . W B W * . B 
- 3  . . W B B B W B 
- 4  . . W B B B * B 
- 5  . W W B W W B B 
- 6  . W . . W . W B 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W . * . . B
+ 2  . . W B W * . B
+ 3  . . W B B B W B
+ 4  . . W B B B * B
+ 5  . W W B W W B B
+ 6  . W . . W . W B
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 15  White: 14
 White (mcts) to move.
 White plays g4.
 
     a b c d e f g h
- 1  . * W * * * . B 
- 2  . * W B W * * B 
- 3  . * W B B W W B 
- 4  . * W W W W W B 
- 5  * W W B W W W B 
- 6  * W . * W * W B 
- 7  * . . W * * . * 
- 8  . . * . . . . . 
+ 1  . * W * * * . B
+ 2  . * W B W * * B
+ 3  . * W B B W W B
+ 4  . * W W W W W B
+ 5  * W W B W W W B
+ 6  * W . * W * W B
+ 7  * . . W * * . *
+ 8  . . * . . . . .
 Black: 10  White: 20
 Black (minimax) to move.
 Black plays f1.
 
     a b c d e f g h
- 1  . . W * * B . B 
- 2  . . W B B * . B 
- 3  . . W B B W W B 
- 4  . . W W W W W B 
- 5  . W W B W W W B 
- 6  . W * * W . W B 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W * * B . B
+ 2  . . W B B * . B
+ 3  . . W B B W W B
+ 4  . . W W W W W B
+ 5  . W W B W W W B
+ 6  . W * * W . W B
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 12  White: 19
 White (mcts) to move.
 White plays c6.
 
     a b c d e f g h
- 1  . * W . . B . B 
- 2  . * W B B * . B 
- 3  . * W B B W W B 
- 4  . * W W W W W B 
- 5  * W W W W W W B 
- 6  * W W * W * W B 
- 7  * . . W * * . * 
- 8  . . * . . . . . 
+ 1  . * W . . B . B
+ 2  . * W B B * . B
+ 3  . * W B B W W B
+ 4  . * W W W W W B
+ 5  * W W W W W W B
+ 6  * W W * W * W B
+ 7  * . . W * * . *
+ 8  . . * . . . . .
 Black: 11  White: 21
 Black (minimax) to move.
 Black plays a6.
 
     a b c d e f g h
- 1  . . W * * B . B 
- 2  . . W B B * . B 
- 3  . * W B B W W B 
- 4  * * B W W W W B 
- 5  * B W W W W W B 
- 6  B W W . W . W B 
- 7  . . . W . . . . 
- 8  . . . . . . . . 
+ 1  . . W * * B . B
+ 2  . . W B B * . B
+ 3  . * W B B W W B
+ 4  * * B W W W W B
+ 5  * B W W W W W B
+ 6  B W W . W . W B
+ 7  . . . W . . . .
+ 8  . . . . . . . .
 Black: 14  White: 19
 White (mcts) to move.
 White plays a4.
 
     a b c d e f g h
- 1  . * W . . B . B 
- 2  . * W B B * . B 
- 3  . * W B B W W B 
- 4  W * B W W W W B 
- 5  * W W W W W W B 
- 6  B W W * W * W B 
- 7  * . * W * * . * 
- 8  . . * . . . . . 
+ 1  . * W . . B . B
+ 2  . * W B B * . B
+ 3  . * W B B W W B
+ 4  W * B W W W W B
+ 5  * W W W W W W B
+ 6  B W W * W * W B
+ 7  * . * W * * . *
+ 8  . . * . . . . .
 Black: 13  White: 21
 Black (minimax) to move.
 Black plays e7.
 
     a b c d e f g h
- 1  . . W * * B . B 
- 2  . . W B B * . B 
- 3  . * W B B W W B 
- 4  W * B W B W W B 
- 5  . W W W B W W B 
- 6  B W W * B * W B 
- 7  . . . W B * . . 
- 8  . . . . . . . . 
+ 1  . . W * * B . B
+ 2  . . W B B * . B
+ 3  . * W B B W W B
+ 4  W * B W B W W B
+ 5  . W W W B W W B
+ 6  B W W * B * W B
+ 7  . . . W B * . .
+ 8  . . . . . . . .
 Black: 17  White: 18
 White (mcts) to move.
 White plays d6.
 
     a b c d e f g h
- 1  . * W . . B . B 
- 2  . * W B B * * B 
- 3  . * W B B W W B 
- 4  W * B W B W W B 
- 5  * W W W W W W B 
- 6  B W W W B * W B 
- 7  * * * W B * . * 
- 8  . . * * . . . . 
+ 1  . * W . . B . B
+ 2  . * W B B * * B
+ 3  . * W B B W W B
+ 4  W * B W B W W B
+ 5  * W W W W W W B
+ 6  B W W W B * W B
+ 7  * * * W B * . *
+ 8  . . * * . . . .
 Black: 16  White: 20
 Black (minimax) to move.
 Black plays d8.
 
     a b c d e f g h
- 1  . . W * * B . B 
- 2  . . W B B * . B 
- 3  . . W B B W W B 
- 4  W * B B B W W B 
- 5  . W W B W W W B 
- 6  B W W B B * W B 
- 7  . . * B B . . . 
- 8  . . * B * * . . 
+ 1  . . W * * B . B
+ 2  . . W B B * . B
+ 3  . . W B B W W B
+ 4  W * B B B W W B
+ 5  . W W B W W W B
+ 6  B W W B B * W B
+ 7  . . * B B . . .
+ 8  . . * B * * . .
 Black: 21  White: 16
 White (mcts) to move.
 White plays f2.
 
     a b c d e f g h
- 1  . * W * * B . B 
- 2  . . W W W W * B 
- 3  . * W B W W W B 
- 4  W * B W B W W B 
- 5  * W W B W W W B 
- 6  B W W B B * W B 
- 7  . * * B B * . * 
- 8  . . . B . . . . 
+ 1  . * W * * B . B
+ 2  . . W W W W * B
+ 3  . * W B W W W B
+ 4  W * B W B W W B
+ 5  * W W B W W W B
+ 6  B W W B B * W B
+ 7  . * * B B * . *
+ 8  . . . B . . . .
 Black: 17  White: 21
 Black (minimax) to move.
 Black plays b3.
 
     a b c d e f g h
- 1  . . W . . B . B 
- 2  . * W W W W . B 
- 3  * B B B W W W B 
- 4  W * B W B W W B 
- 5  . W W B W W W B 
- 6  B W W B B * W B 
- 7  . . * B B . . . 
- 8  . . * B * * . . 
+ 1  . . W . . B . B
+ 2  . * W W W W . B
+ 3  * B B B W W W B
+ 4  W * B W B W W B
+ 5  . W W B W W W B
+ 6  B W W B B * W B
+ 7  . . * B B . . .
+ 8  . . * B * * . .
 Black: 19  White: 20
 White (mcts) to move.
 White plays e8.
 
     a b c d e f g h
- 1  . * W * * B . B 
- 2  . . W W W W * B 
- 3  . B B B W W W B 
- 4  W * B W B W W B 
- 5  * W W B W W W B 
- 6  B W W B W * W B 
- 7  . * * W W * . * 
- 8  . . * B W * . . 
+ 1  . * W * * B . B
+ 2  . . W W W W * B
+ 3  . B B B W W W B
+ 4  W * B W B W W B
+ 5  * W W B W W W B
+ 6  B W W B W * W B
+ 7  . * * W W * . *
+ 8  . . * B W * . .
 Black: 16  White: 24
 Black (minimax) to move.
 Black plays f8.
 
     a b c d e f g h
- 1  . . W . . B . B 
- 2  * * W W W W . B 
- 3  * B B B W W W B 
- 4  W * B W B W W B 
- 5  . W W B W W W B 
- 6  B W W B W . W B 
- 7  . . * W B * . . 
- 8  . . . B B B . . 
+ 1  . . W . . B . B
+ 2  * * W W W W . B
+ 3  * B B B W W W B
+ 4  W * B W B W W B
+ 5  . W W B W W W B
+ 6  B W W B W . W B
+ 7  . . * W B * . .
+ 8  . . . B B B . .
 Black: 19  White: 22
 White (mcts) to move.
 White plays a3.
 
     a b c d e f g h
- 1  . * W * * B . B 
- 2  * . W W W W * B 
- 3  W W W W W W W B 
- 4  W * B W B W W B 
- 5  * W W B W W W B 
- 6  B W W B W * W B 
- 7  . * * W B * . * 
- 8  . . * B B B . . 
+ 1  . * W * * B . B
+ 2  * . W W W W * B
+ 3  W W W W W W W B
+ 4  W * B W B W W B
+ 5  * W W B W W W B
+ 6  B W W B W * W B
+ 7  . * * W B * . *
+ 8  . . * B B B . .
 Black: 16  White: 26
 Black (minimax) to move.
 Black plays c8.
 
     a b c d e f g h
- 1  . . W . . B . B 
- 2  . . W W W W . B 
- 3  W W W W W W W B 
- 4  W * B W B W B B 
- 5  . W W B W B W B 
- 6  B W W B B * W B 
- 7  . . * B B * . . 
- 8  . . B B B B . . 
+ 1  . . W . . B . B
+ 2  . . W W W W . B
+ 3  W W W W W W W B
+ 4  W * B W B W B B
+ 5  . W W B W B W B
+ 6  B W W B B * W B
+ 7  . . * B B * . .
+ 8  . . B B B B . .
 Black: 21  White: 22
 White (mcts) to move.
 White plays f6.
 
     a b c d e f g h
- 1  . * W * * B . B 
- 2  * . W W W W * B 
- 3  W W W W W W W B 
- 4  W * B W B W B B 
- 5  * W W B W W W B 
- 6  B W W W W W W B 
- 7  . * * B B * * * 
- 8  . . B B B B . . 
+ 1  . * W * * B . B
+ 2  * . W W W W * B
+ 3  W W W W W W W B
+ 4  W * B W B W B B
+ 5  * W W B W W W B
+ 6  B W W W W W W B
+ 7  . * * B B * * *
+ 8  . . B B B B . .
 Black: 18  White: 26
 Black (minimax) to move.
 Black plays b4.
 
     a b c d e f g h
- 1  . . W . . B . B 
- 2  . . W W W W . B 
- 3  W W W W W W W B 
- 4  W B B W B W B B 
- 5  * W B B W W W B 
- 6  B W W B W W W B 
- 7  . . * B B . . . 
- 8  . . B B B B . . 
+ 1  . . W . . B . B
+ 2  . . W W W W . B
+ 3  W W W W W W W B
+ 4  W B B W B W B B
+ 5  * W B B W W W B
+ 6  B W W B W W W B
+ 7  . . * B B . . .
+ 8  . . B B B B . .
 Black: 21  White: 24
 White (mcts) to move.
 White plays c7.
 
     a b c d e f g h
- 1  . * W * * B * B 
- 2  * * W W W W * B 
- 3  W W W W W W W B 
- 4  W B B W B W B B 
- 5  * W B B W W W B 
- 6  B W W W W W W B 
- 7  * * W B B * * * 
- 8  . * B B B B . . 
+ 1  . * W * * B * B
+ 2  * * W W W W * B
+ 3  W W W W W W W B
+ 4  W B B W B W B B
+ 5  * W B B W W W B
+ 6  B W W W W W W B
+ 7  * * W B B * * *
+ 8  . * B B B B . .
 Black: 20  White: 26
 Black (minimax) to move.
 Black plays d1.
 
     a b c d e f g h
- 1  . . W B * B . B 
- 2  . . W B B W * B 
- 3  W W W B W B W B 
- 4  W B B B B W B B 
- 5  * W B B W W W B 
- 6  B W W W W W W B 
- 7  . . W B B * . . 
- 8  . . B B B B . . 
+ 1  . . W B * B . B
+ 2  . . W B B W * B
+ 3  W W W B W B W B
+ 4  W B B B B W B B
+ 5  * W B B W W W B
+ 6  B W W W W W W B
+ 7  . . W B B * . .
+ 8  . . B B B B . .
 Black: 26  White: 21
 White (mcts) to move.
 White plays g2.
 
     a b c d e f g h
- 1  . * W B * B * B 
- 2  * * W B B W W B 
- 3  W W W B W W W B 
- 4  W B B B W W B B 
- 5  * W B W W W W B 
- 6  B W W W W W W B 
- 7  * * W B B * * * 
- 8  . * B B B B . . 
+ 1  . * W B * B * B
+ 2  * * W B B W W B
+ 3  W W W B W W W B
+ 4  W B B B W W B B
+ 5  * W B W W W W B
+ 6  B W W W W W W B
+ 7  * * W B B * * *
+ 8  . * B B B B . .
 Black: 23  White: 25
 Black (minimax) to move.
 Black plays f7.
 
     a b c d e f g h
- 1  . . W B * B * B 
- 2  . . W B B B W B 
- 3  W W W B W B W B 
- 4  W B B B W B B B 
- 5  * W B B W B W B 
- 6  B W W W B B B B 
- 7  . . W B B B * * 
- 8  . . B B B B * . 
+ 1  . . W B * B * B
+ 2  . . W B B B W B
+ 3  W W W B W B W B
+ 4  W B B B W B B B
+ 5  * W B B W B W B
+ 6  B W W W B B B B
+ 7  . . W B B B * *
+ 8  . . B B B B * .
 Black: 32  White: 17
 White (mcts) to move.
 White plays g1.
 
     a b c d e f g h
- 1  . * W B * B W B 
- 2  * * W B B W W B 
- 3  W W W B W B W B 
- 4  W B B B W B B B 
- 5  * W B B W B W B 
- 6  B W W W B B B B 
- 7  * * W B B B . . 
- 8  . * B B B B . . 
+ 1  . * W B * B W B
+ 2  * * W B B W W B
+ 3  W W W B W B W B
+ 4  W B B B W B B B
+ 5  * W B B W B W B
+ 6  B W W W B B B B
+ 7  * * W B B B . .
+ 8  . * B B B B . .
 Black: 31  White: 19
 Black (minimax) to move.
 Black plays e1.
 
     a b c d e f g h
- 1  . . W B B B W B 
- 2  . . W B B B W B 
- 3  W W W B W B B B 
- 4  W B B B W B B B 
- 5  * W B B W B W B 
- 6  B W W W B B B B 
- 7  . . W B B B * * 
- 8  . . B B B B * . 
+ 1  . . W B B B W B
+ 2  . . W B B B W B
+ 3  W W W B W B B B
+ 4  W B B B W B B B
+ 5  * W B B W B W B
+ 6  B W W W B B B B
+ 7  . . W B B B * *
+ 8  . . B B B B * .
 Black: 34  White: 17
 White (mcts) to move.
 White plays h7.
 
     a b c d e f g h
- 1  . * W B B B W B 
- 2  * * W B B B W B 
- 3  W W W B W B B B 
- 4  W B B B W B B B 
- 5  * W B B W W W B 
- 6  B W W W B B W B 
- 7  * * W B B B * W 
- 8  . * B B B B . * 
+ 1  . * W B B B W B
+ 2  * * W B B B W B
+ 3  W W W B W B B B
+ 4  W B B B W B B B
+ 5  * W B B W W W B
+ 6  B W W W B B W B
+ 7  * * W B B B * W
+ 8  . * B B B B . *
 Black: 32  White: 20
 Black (minimax) to move.
 Black plays h8.
 
     a b c d e f g h
- 1  . . W B B B W B 
- 2  . . W B B B W B 
- 3  W W W B W B B B 
- 4  W B B B W B B B 
- 5  * W B B W W W B 
- 6  B W W W B B W B 
- 7  . . W B B B * B 
- 8  . . B B B B * B 
+ 1  . . W B B B W B
+ 2  . . W B B B W B
+ 3  W W W B W B B B
+ 4  W B B B W B B B
+ 5  * W B B W W W B
+ 6  B W W W B B W B
+ 7  . . W B B B * B
+ 8  . . B B B B * B
 Black: 34  White: 19
 White (mcts) to move.
 White plays a5.
 
     a b c d e f g h
- 1  . * W B B B W B 
- 2  * * W B B B W B 
- 3  W W W B W B B B 
- 4  W W B B W B B B 
- 5  W W B B W W W B 
- 6  B W W W B B W B 
- 7  * * W B B B * B 
- 8  . * B B B B . B 
+ 1  . * W B B B W B
+ 2  * * W B B B W B
+ 3  W W W B W B B B
+ 4  W W B B W B B B
+ 5  W W B B W W W B
+ 6  B W W W B B W B
+ 7  * * W B B B * B
+ 8  . * B B B B . B
 Black: 33  White: 21
 Black (minimax) to move.
 Black plays a2.
 
     a b c d e f g h
- 1  . . W B B B W B 
- 2  B * W B B B W B 
- 3  B B W B W B B B 
- 4  B W B B W B B B 
- 5  B W B B W W W B 
- 6  B W W W B B W B 
- 7  . . W B B B * B 
- 8  . . B B B B . B 
+ 1  . . W B B B W B
+ 2  B * W B B B W B
+ 3  B B W B W B B B
+ 4  B W B B W B B B
+ 5  B W B B W W W B
+ 6  B W W W B B W B
+ 7  . . W B B B * B
+ 8  . . B B B B . B
 Black: 38  White: 17
 White (mcts) to move.
 White plays b2.
 
     a b c d e f g h
- 1  * * W B B B W B 
- 2  B W W B B B W B 
- 3  B W W B W B B B 
- 4  B W B B W B B B 
- 5  B W B B W W W B 
- 6  B W W W B B W B 
- 7  * * W B B B * B 
- 8  . * B B B B . B 
+ 1  * * W B B B W B
+ 2  B W W B B B W B
+ 3  B W W B W B B B
+ 4  B W B B W B B B
+ 5  B W B B W W W B
+ 6  B W W W B B W B
+ 7  * * W B B B * B
+ 8  . * B B B B . B
 Black: 37  White: 19
 Black (minimax) to move.
 Black plays g7.
 
     a b c d e f g h
- 1  . . W B B B W B 
- 2  B W W B B B W B 
- 3  B W W B W B B B 
- 4  B W B B W B B B 
- 5  B W B B W W B B 
- 6  B W W W B B B B 
- 7  . . W B B B B B 
- 8  . . B B B B * B 
+ 1  . . W B B B W B
+ 2  B W W B B B W B
+ 3  B W W B W B B B
+ 4  B W B B W B B B
+ 5  B W B B W W B B
+ 6  B W W W B B B B
+ 7  . . W B B B B B
+ 8  . . B B B B * B
 Black: 40  White: 17
 White (mcts) to move.
 White plays g8.
 
     a b c d e f g h
- 1  * * W B B B W B 
- 2  B W W B B B W B 
- 3  B W W B W B W B 
- 4  B W W B W B W B 
- 5  B W B W W W W B 
- 6  B W W W W B W B 
- 7  * * W B B W W B 
- 8  . * B B B B W B 
+ 1  * * W B B B W B
+ 2  B W W B B B W B
+ 3  B W W B W B W B
+ 4  B W W B W B W B
+ 5  B W B W W W W B
+ 6  B W W W W B W B
+ 7  * * W B B W W B
+ 8  . * B B B B W B
 Black: 31  White: 27
 Black (minimax) to move.
 Black plays a1.
 
     a b c d e f g h
- 1  B * W B B B W B 
- 2  B B W B B B W B 
- 3  B W B B W B W B 
- 4  B W W B W B W B 
- 5  B W B W W W W B 
- 6  B W W W W B W B 
- 7  . . W B B W W B 
- 8  . * B B B B W B 
+ 1  B * W B B B W B
+ 2  B B W B B B W B
+ 3  B W B B W B W B
+ 4  B W W B W B W B
+ 5  B W B W W W W B
+ 6  B W W W W B W B
+ 7  . . W B B W W B
+ 8  . * B B B B W B
 Black: 34  White: 25
 White (mcts) to move.
 White plays b1.
 
     a b c d e f g h
- 1  B W W B B B W B 
- 2  B W W B B B W B 
- 3  B W B B W B W B 
- 4  B W W B W B W B 
- 5  B W B W W W W B 
- 6  B W W W W B W B 
- 7  * * W B B W W B 
- 8  . * B B B B W B 
+ 1  B W W B B B W B
+ 2  B W W B B B W B
+ 3  B W B B W B W B
+ 4  B W W B W B W B
+ 5  B W B W W W W B
+ 6  B W W W W B W B
+ 7  * * W B B W W B
+ 8  . * B B B B W B
 Black: 33  White: 27
 Black (minimax) to move.
 Black plays a7.
 
     a b c d e f g h
- 1  B W W B B B W B 
- 2  B W W B B B W B 
- 3  B W B B W B W B 
- 4  B W W B W B W B 
- 5  B W B W W W W B 
- 6  B B W W W B W B 
- 7  B * W B B W W B 
- 8  . * B B B B W B 
+ 1  B W W B B B W B
+ 2  B W W B B B W B
+ 3  B W B B W B W B
+ 4  B W W B W B W B
+ 5  B W B W W W W B
+ 6  B B W W W B W B
+ 7  B * W B B W W B
+ 8  . * B B B B W B
 Black: 35  White: 26
 White (mcts) to move.
 White plays b8.
 
     a b c d e f g h
- 1  B W W B B B W B 
- 2  B W W B B B W B 
- 3  B W B B W B W B 
- 4  B W W B W B W B 
- 5  B W B W W W W B 
- 6  B B W W W B W B 
- 7  B * W B B W W B 
- 8  * W W W W W W B 
+ 1  B W W B B B W B
+ 2  B W W B B B W B
+ 3  B W B B W B W B
+ 4  B W W B W B W B
+ 5  B W B W W W W B
+ 6  B B W W W B W B
+ 7  B * W B B W W B
+ 8  * W W W W W W B
 Black: 31  White: 31
 Black (minimax) to move.
 Black plays a8.
 
     a b c d e f g h
- 1  B W W B B B W B 
- 2  B W W B B B W B 
- 3  B W B B W B W B 
- 4  B W W B W B W B 
- 5  B W B W W W W B 
- 6  B B W W W B W B 
- 7  B * W B B W W B 
- 8  B B B B B B B B 
+ 1  B W W B B B W B
+ 2  B W W B B B W B
+ 3  B W B B W B W B
+ 4  B W W B W B W B
+ 5  B W B W W W W B
+ 6  B B W W W B W B
+ 7  B * W B B W W B
+ 8  B B B B B B B B
 Black: 38  White: 25
 White (mcts) to move.
 White plays b7.
 
     a b c d e f g h
- 1  B W W B B B W B 
- 2  B W W B B B W B 
- 3  B W B B W B W B 
- 4  B W W B W B W B 
- 5  B W B W W W W B 
- 6  B W W W W B W B 
- 7  B W W B B W W B 
- 8  B B B B B B B B 
+ 1  B W W B B B W B
+ 2  B W W B B B W B
+ 3  B W B B W B W B
+ 4  B W W B W B W B
+ 5  B W B W W W W B
+ 6  B W W W W B W B
+ 7  B W W B B W W B
+ 8  B B B B B B B B
 Black: 37  White: 27
 Game over. Black wins.
