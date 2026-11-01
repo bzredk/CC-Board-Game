@@ -3,6 +3,29 @@
 Othello in Java and C++, with human players, Minimax, and MCTS. The Java version
 also includes an experimental TD-learning strategy and trained baseline weights.
 
+## Demo
+
+### C++ terminal
+
+Minimax (black) vs. MCTS (white), replaying actual CLI output at a faster pace.
+
+![C++ Othello terminal demo](docs/demo/cpp-demo.gif)
+
+After building the C++ version, reproduce this game with:
+
+```sh
+./.build/cpp/othello_cli minimax mcts --depth 3 --iterations 500 --seed 27
+```
+
+[Full terminal transcript](docs/demo/cpp-demo.txt).
+
+### Java desktop
+
+A completed JavaFX human-vs-TD-baseline game. Computer turns are advanced using
+the **Take Computer Turn** button.
+
+![JavaFX Othello desktop interface](docs/demo/java-othello.png)
+
 ## Structure
 
 ```text
