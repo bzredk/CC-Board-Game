@@ -1,10 +1,16 @@
 # CC-Board-Game
 
-Othello with human players, Minimax, MCTS, and an experimental TD-learning strategy.
+Othello in Java and C++, with human players, Minimax, and MCTS. The Java version
+also includes an experimental TD-learning strategy and trained baseline weights.
 
 ## Structure
 
 ```text
+cpp/
+  include/ccbg/           Public rules and search interfaces
+  src/                    Rules, search, and terminal application
+  tests/                  Independent rules oracle and CLI checks
+  CMakeLists.txt           C++17 library and executable targets
 java/
   src/main/java/othello/   Application, game logic, and JavaFX interface
   src/main/resources/     JavaFX layout
@@ -13,6 +19,44 @@ java/
 docs/
   othello-class-diagram.pdf
 ```
+
+## C++ version
+
+Requires a C++17 compiler and CMake 3.16 or newer. It uses only the standard
+library. Run these commands from the repository root:
+
+```sh
+cmake -S cpp -B .build/cpp -DCMAKE_BUILD_TYPE=Release
+cmake --build .build/cpp --config Release
+ctest --test-dir .build/cpp -C Release --output-on-failure
+./.build/cpp/othello_cli human mcts --iterations 500 --seed 27
+```
+
+For a Visual Studio multi-configuration build on Windows, run
+`.\.build\cpp\Release\othello_cli.exe` instead. Use a terminal with your C++
+compiler configured.
+
+Player arguments select black and white: `human human`, `human mcts`,
+`human minimax`, or `minimax mcts`. Enter a square such as `d3`; `*` marks legal
+moves. Passing occurs automatically when required. Enter `quit` to stop.
+`--depth` controls Minimax placements, `--iterations` controls MCTS simulations,
+and `--seed` makes MCTS repeatable with the same build and settings.
+
+The rules and searches are independent of terminal input/output. A CMake project
+can reuse them with:
+
+```cmake
+add_subdirectory(path/to/CC-Board-Game/cpp cc-board-game)
+target_link_libraries(your_target PRIVATE ccbg::othello)
+```
+
+Include `ccbg/othello.hpp` for `Board` and `Game`, and `ccbg/search.hpp` for
+`choose_mcts` and `choose_minimax`. `Game::play` switches players;
+`Game::pass` is explicit and only allowed when required. Boards serialize to 64
+row-major `B`, `W`, or `.` characters; the current player is stored separately.
+Both searches return an empty optional when the player must pass and leave the
+input board unchanged. The C++ version currently provides local terminal play
+and the reusable library; Java's TD-learning model remains in the Java version.
 
 ## Java version
 
