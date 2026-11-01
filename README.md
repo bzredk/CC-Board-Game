@@ -2,43 +2,39 @@
 
 Othello in Java and C++. Play against Minimax, MCTS, or the Java TD-learning baseline.
 
-![Minimax vs. MCTS in the C++ terminal](docs/demo/cpp-demo.gif)
+## Players
 
-Minimax plays black, MCTS plays white. This is an accelerated replay of
-[actual CLI output](docs/demo/cpp-demo.txt).
-
-## How the players choose a move
-
-The examples below start from the **same position, with black to move**. Dots mark
-legal moves; the gold ring marks the selected move. Minimax and MCTS use the C++
-implementation; TD-learning uses the bundled Java model.
+The screenshots show the JavaFX game. Click **Take Computer Turn** to advance
+a computer player.
 
 ### Minimax: look ahead
 
-Search three placements ahead, account for the opponent's best replies, and
-choose the highest resulting position score. Alpha-beta pruning skips branches
-that cannot improve the decision. Here, the search chooses **f4**.
+Search future moves and the opponent's replies, then choose the best resulting
+position. Alpha-beta pruning skips branches that cannot improve the decision.
 
-![Minimax decision: depth-three scores for all seven legal moves, choosing f4](docs/demo/algorithm-minimax.png)
+![JavaFX human-vs-Minimax game, with Minimax playing white](docs/demo/java-minimax.png)
+
+Human vs. Minimax (`human minimax`), shown at the end of a recorded GUI run.
 
 ### MCTS: try possible continuations
 
-Use UCT to balance exploration and promising moves, simulate games, and feed the
-results back into the tree. After 500 simulations with seed 27, **d2** has the
-most root visits and is selected.
+Use UCT to explore possible moves, simulate games, and feed the results back
+into the search tree. Choose the move with the most visits.
 
-![MCTS decision: 500 simulations distributed across legal moves, choosing d2](docs/demo/algorithm-mcts.png)
+![JavaFX human-vs-MCTS game, with MCTS playing white](docs/demo/java-mcts.png)
+
+Human vs. MCTS (`human mcts`), shown at the end of a recorded GUI run.
 
 ### TD-learning: evaluate the next board
 
 Apply each legal move, score its resulting board with the value network, and
 choose the highest prediction. The bundled checkpoint was trained for 20
-self-play games. In this position, it chooses **f4**.
+self-play games.
 
-![TD-learning decision: predicted afterstate values from the bundled model, choosing f4](docs/demo/algorithm-td.png)
+![JavaFX human-vs-TD-learning game, with the bundled model playing white](docs/demo/java-othello.png)
 
-Each algorithm uses its own scoring scale. These figures explain one decision;
-they do not compare playing strength. [Recorded position and values](docs/demo/algorithm-decisions.json).
+Human vs. the TD baseline (`human custom`). These are individual demo games,
+not a comparison of playing strength.
 
 ## Run it
 
@@ -59,8 +55,6 @@ The two arguments select black and white: `human human`, `human minimax`,
 `human mcts`, or `minimax mcts`. Java also accepts `human custom` to play against
 the bundled TD model. Click **Take Computer Turn** to advance a computer player.
 
-![Completed JavaFX game with the TD baseline playing white](docs/demo/java-othello.png)
-
 ### C++ terminal
 
 Requires a **C++17 compiler** and **CMake 3.16+**. Run from the repository root:
@@ -76,6 +70,11 @@ For a Visual Studio build on Windows, run `.\.build\cpp\Release\othello_cli.exe`
 Enter a square such as `d3`, or `quit` to stop. Passing is automatic when required.
 Choose `human`, `minimax`, or `mcts` for either player; `--depth` sets the Minimax
 placement depth and `--iterations` sets the MCTS simulation count.
+
+![Minimax vs. MCTS in the C++ terminal](docs/demo/cpp-demo.gif)
+
+Minimax plays black, MCTS plays white. This is an accelerated replay of
+[actual CLI output](docs/demo/cpp-demo.txt).
 
 <details>
 <summary>Train the Java model and run extra checks</summary>
