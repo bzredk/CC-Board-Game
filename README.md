@@ -2,39 +2,39 @@
 
 Othello in Java and C++. Play against Minimax, MCTS, or the Java TD-learning baseline.
 
-## Players
+## Same position, three decisions
 
-The screenshots show the JavaFX game. Click **Take Computer Turn** to advance
-a computer player.
+Each figure shows the same black-to-move position in the **original JavaFX
+interface**, next to the values used to choose a move. The gold bar marks the
+choice. Minimax and MCTS use the C++ implementation; TD-learning uses the
+bundled Java model.
 
 ### Minimax: look ahead
 
-Search future moves and the opponent's replies, then choose the best resulting
-position. Alpha-beta pruning skips branches that cannot improve the decision.
+Search three placements ahead, account for the opponent's best replies, and
+choose the highest resulting position score. Alpha-beta pruning skips branches
+that cannot improve the decision. Here, **f4** has the highest score, **14**.
 
-![JavaFX human-vs-Minimax game, with Minimax playing white](docs/demo/java-minimax.png)
-
-Human vs. Minimax (`human minimax`), shown at the end of a recorded GUI run.
+![Original JavaFX position beside Minimax scores for all legal moves, choosing f4](docs/demo/algorithm-minimax.png)
 
 ### MCTS: try possible continuations
 
-Use UCT to explore possible moves, simulate games, and feed the results back
-into the search tree. Choose the move with the most visits.
+Use UCT to balance exploration and promising moves, simulate games, and feed the
+results back into the tree. After **500 simulations** with seed 27, **d2** has
+the most root visits (**82**) and is selected.
 
-![JavaFX human-vs-MCTS game, with MCTS playing white](docs/demo/java-mcts.png)
-
-Human vs. MCTS (`human mcts`), shown at the end of a recorded GUI run.
+![Original JavaFX position beside MCTS visit counts, choosing d2 after 500 simulations](docs/demo/algorithm-mcts.png)
 
 ### TD-learning: evaluate the next board
 
 Apply each legal move, score its resulting board with the value network, and
 choose the highest prediction. The bundled checkpoint was trained for 20
-self-play games.
+self-play games. Here, it chooses **f4**, with a predicted value of **0.0289**.
 
-![JavaFX human-vs-TD-learning game, with the bundled model playing white](docs/demo/java-othello.png)
+![Original JavaFX position beside the TD model's afterstate predictions, choosing f4](docs/demo/algorithm-td.png)
 
-Human vs. the TD baseline (`human custom`). These are individual demo games,
-not a comparison of playing strength.
+The values have different meanings across algorithms. This explains one
+decision, not relative playing strength. [Recorded position and values](docs/demo/algorithm-decisions.json).
 
 ## Run it
 
