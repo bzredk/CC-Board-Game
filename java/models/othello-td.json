@@ -1,0 +1,12 @@
+{
+  "format": "DL4J ModelSerializer",
+  "training": {
+    "self_play_games": 20,
+    "seed": 27,
+    "gamma": 0.99,
+    "adam_learning_rate": 0.001,
+    "exploration_rate": 0.1,
+    "parameter_updates": 1200
+  },
+  "sha256": "dbd30d63a1cbc2294198d6f833009f32d7e10fed78928e34692454354cd1a37d"
+}
